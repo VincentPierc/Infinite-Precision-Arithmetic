@@ -13,6 +13,8 @@ public class LinkedList {
             Node new_node = new Node(val);
             if(list.head == null) {
                 list.head = new_node;
+            } else {
+
             }
 
 
