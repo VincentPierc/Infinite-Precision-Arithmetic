@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Linked List">
-      <change afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
+    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Linked List tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,10 +51,11 @@
       <recent name="C:\Users\vinhp\OneDrive - Cal Poly\Super_Senior\CS203\Project\Project2\Project2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedList_Tests.testLinkedListConstructor2">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.BigNumArithmetic">
+    <configuration name="BigNumArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BigNumArithmetic" />
       <module name="Project2" />
+      <option name="PROGRAM_PARAMETERS" value="SampleInput.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,16 +65,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedList_Tests.testLinkedListConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testLinkedListConstructor" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,12 +79,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.testSampleFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest" />
+      <option name="METHOD_NAME" value="testSampleFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BigNumArithmetic" />
+      <item itemvalue="JUnit.LinkedList_Tests" />
+      <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
+      <item itemvalue="JUnit.SampleTest" />
+      <item itemvalue="JUnit.SampleTest.testSampleFile" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BigNumArithmetic" />
+        <item itemvalue="JUnit.SampleTest.testSampleFile" />
+        <item itemvalue="JUnit.SampleTest" />
         <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
         <item itemvalue="JUnit.LinkedList_Tests" />
-        <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665787232178</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Linked List tests">
+      <created>1665790075532</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665790075532</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +192,8 @@
     <MESSAGE value="Initialize" />
     <MESSAGE value="Startup" />
     <MESSAGE value="Linked List" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linked List" />
+    <MESSAGE value="Linked List tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked List tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

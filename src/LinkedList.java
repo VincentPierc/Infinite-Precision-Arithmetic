@@ -32,6 +32,12 @@ public class LinkedList {
             }
             return out;
         }
+
+        public int addLinkedList(LinkedList other) {
+            int sum = 0;
+
+            return sum;
+        }
 }
 
 
