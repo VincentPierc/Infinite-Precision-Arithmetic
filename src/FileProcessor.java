@@ -20,20 +20,41 @@ public class FileProcessor {
      */
     public static void processFile(String filePath) {
         File infile = new File(filePath);
-        //File outf = new File("OutputFile");
 
         try (Scanner scan = new Scanner(infile)) {
+            File outF = new File("outFile");
+            PrintWriter out = new PrintWriter(outF);
             while (scan.hasNext()) {
                 // TODO: Process each line of the input file here.
                 String line = scan.nextLine();
-                //System.out.println(line);
-                File outF = new File("outFile");
-                PrintWriter out = new PrintWriter(outF);
-
+                if(line.length() == 0) {                    // skip empty lines
+                    continue;
+                }
                 ArrayList<Object> list = new ArrayList<>();  // for each line return list of number, operation, string
                 list = FileProcessor.processLine(line);
 
+                String reformatInput = (String) list.get(3);          // useful variable names
+                LinkedList num1 = (LinkedList) list.get(0);
+                LinkedList num2 = (LinkedList) list.get(2);
+                char operator = (char)list.get(1);
+                int total = 0;
+                switch (operator) {
+                    case '+':
+                        total = num1.addLinkedList(num2);
+                        break;
+                    case '*':
+                        //total = num1.multiplyLinkedList(num2);
+                        break;
+                    case '^':
+                        //total = num1.exponentiateLinkedList(num2);
+                        break;
+                    default:
+                        System.out.println("Bad operator");
+                }
+                out.println(reformatInput + total);
             }
+            out.close();
+
         } catch (FileNotFoundException e) {
             System.out.println("File not found: " + infile.getPath());
         }
@@ -66,12 +87,11 @@ public class FileProcessor {
                continue;
            }
         }
-
         listy.add(number);
         if(out.length() > 0) {
             out += " = ";
             listy.add(out);
-            System.out.println(out);
+            //System.out.println(out);
         }
         return listy;
     }
