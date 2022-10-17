@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +62,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinkedList_Tests.testLinkedListConstructor2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
       <option name="METHOD_NAME" value="testLinkedListConstructor2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList_Tests.testRemoveLeadingZeroes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
+      <option name="METHOD_NAME" value="testRemoveLeadingZeroes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,7 +103,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.BigNumArithmetic" />
-      <item itemvalue="JUnit.LinkedList_Tests" />
+      <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
       <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
       <item itemvalue="JUnit.SampleTest" />
       <item itemvalue="JUnit.SampleTest.testSampleFile" />
@@ -109,10 +111,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
+        <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
+        <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
         <item itemvalue="JUnit.SampleTest.testSampleFile" />
         <item itemvalue="JUnit.SampleTest" />
-        <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
-        <item itemvalue="JUnit.LinkedList_Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665983189885</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Addition not working">
+      <created>1666024974652</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666024974652</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,14 +254,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="6" />
+          <line>120</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
