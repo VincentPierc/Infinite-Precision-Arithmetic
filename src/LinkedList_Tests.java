@@ -32,22 +32,15 @@ public class LinkedList_Tests {
         listy.appendNode(1);
         listy.appendNode(2);
         listy.appendNode(3);
-        assertEquals("321", listy.printListReverse());
+        assertEquals("123", listy.printList());
     }
 
     @Test
-    public void testRemoveLeadingZeroes() {
+    public void testPrintListReverse() {
         LinkedList listy = new LinkedList();
-        LinkedList listy2 = new LinkedList();
         listy.appendNode(1);
         listy.appendNode(2);
         listy.appendNode(3);
-        listy2.appendNode(0);
-        listy2.appendNode(0);
-        listy2.appendNode(1);
-        listy2.appendNode(2);
-        listy2.appendNode(3);
-        LinkedList listy3 = listy2.removeLeadingZeroes();
-        assertEquals(listy3.printList(), listy.printList());
+        assertEquals("321", listy.printListReverse());
     }
 }

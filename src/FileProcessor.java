@@ -32,7 +32,6 @@ public class FileProcessor {
                 }
                 ArrayList<Object> list = new ArrayList<>();  // for each line return list of number, operation, string
                 list = FileProcessor.processLine(line);
-                System.out.println(((LinkedList)list.get(0)).printList() + " " + list.get(1) + " " + ((LinkedList)list.get(2)).printList());
                 String reformatInput = (String) list.get(3);          // useful variable names
                 LinkedList num1 = (LinkedList) list.get(0);
                 LinkedList num2 = (LinkedList) list.get(2);
@@ -53,15 +52,11 @@ public class FileProcessor {
                     default:
                         System.out.println("Bad operator");
                 }
-
-                total = total.removeLeadingZeroes();
-                String noZeroes = total.printList();
-
-                //String noZeroes = total.printListReverse();
-                //out.println(reformatInput + noZeroes);
-                //TODO remove print
-                System.out.println(reformatInput + noZeroes);
-            }
+                String strTotal = total.printListReverse();
+                //System.out.println(reformatInput + strTotal);
+                strTotal = removeLeadingZeroes(strTotal);
+                out.println(reformatInput + strTotal);
+                }
             out.close();
 
         } catch (FileNotFoundException e) {
@@ -113,5 +108,17 @@ public class FileProcessor {
         return listy;
     }
 
+
+    public static String removeLeadingZeroes(String str) {
+        String noZeroes = "";
+        for(int index = 0; index < str.length(); index++) {
+            if(str.charAt(index) == '0') {
+                continue;
+            }
+            noZeroes = str.substring(index);
+            break;
+        }
+        return noZeroes;
+    }
 
 }

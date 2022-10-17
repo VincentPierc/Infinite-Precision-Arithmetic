@@ -49,32 +49,11 @@ public class LinkedList {
             return out;
         }
         while (current != null) {
-            out += String.valueOf(current.val) + out.substring(0);
+            out = String.valueOf(current.val) + out.substring(0);
             current = current.next;
         }
         return out;
     }
-
-    public LinkedList removeLeadingZeroes() {
-        if (this.head.val != 0) {
-            return this;
-        }
-        LinkedList list = new LinkedList();
-        return _removeLeadingZeroes(list, this.head.next);
-    }
-
-    private LinkedList _removeLeadingZeroes(LinkedList list, Node current) {
-
-        if (current == null) {
-            return list;
-        }else if (current.val == 0) {
-            return _removeLeadingZeroes(list, current.next);
-        } else {
-            list.appendNode(current.val);
-            return _removeLeadingZeroes(list, current.next);
-        }
-    }
-
 
     public LinkedList addLinkedList(LinkedList other) {
         LinkedList sum = new LinkedList();

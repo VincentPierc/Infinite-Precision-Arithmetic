@@ -7,6 +7,7 @@
     <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Addition not working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outFile" beforeDir="false" afterPath="$PROJECT_DIR$/outFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
@@ -62,11 +63,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LinkedList_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedList_Tests.testLinkedListConstructor2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
       <option name="METHOD_NAME" value="testLinkedListConstructor2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList_Tests.testPrintListReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
+      <option name="METHOD_NAME" value="testPrintListReverse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,39 +102,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleTest.testSampleFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleTest" />
-      <option name="METHOD_NAME" value="testSampleFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.BigNumArithmetic" />
-      <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
+      <item itemvalue="JUnit.LinkedList_Tests" />
+      <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
       <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
-      <item itemvalue="JUnit.SampleTest" />
-      <item itemvalue="JUnit.SampleTest.testSampleFile" />
+      <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
+        <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
+        <item itemvalue="JUnit.LinkedList_Tests" />
         <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
         <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
-        <item itemvalue="JUnit.SampleTest.testSampleFile" />
-        <item itemvalue="JUnit.SampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -249,27 +250,6 @@
     <MESSAGE value="Processing" />
     <MESSAGE value="Addition not working" />
     <option name="LAST_COMMIT_MESSAGE" value="Addition not working" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
