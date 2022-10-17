@@ -24,10 +24,11 @@ public class FileProcessor {
         try (Scanner scan = new Scanner(infile)) {
             File outF = new File("outFile");
             PrintWriter out = new PrintWriter(outF);
+
             while (scan.hasNext()) {
                 // TODO: Process each line of the input file here.
                 String line = scan.nextLine();
-                if(line.length() == 0) {                    // skip empty lines
+                if (line.length() == 0) {                    // skip empty lines
                     continue;
                 }
                 ArrayList<Object> list = new ArrayList<>();  // for each line return list of number, operation, string
@@ -36,8 +37,8 @@ public class FileProcessor {
                 String reformatInput = (String) list.get(3);          // useful variable names
                 LinkedList num1 = (LinkedList) list.get(0);
                 LinkedList num2 = (LinkedList) list.get(2);
-                char operator = (char)list.get(1);
-                int total = 0;
+                char operator = (char) list.get(1);
+                LinkedList total = new LinkedList();
                 switch (operator) {
                     case '+':
                         total = num1.addLinkedList(num2);
@@ -51,7 +52,9 @@ public class FileProcessor {
                     default:
                         System.out.println("Bad operator");
                 }
-                out.println(reformatInput + total);
+                total = total.removeLeadingZeroes();
+                String noZeroes = total.printList();
+                out.println(reformatInput + noZeroes);
             }
             out.close();
 

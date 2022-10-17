@@ -33,10 +33,27 @@ public class LinkedList {
             return out;
         }
 
+        public LinkedList removeLeadingZeroes() {
+            if(this.head.val != 0) { return this; }
+            LinkedList list = null;
+            return _removeLeadingZeroes(list, this.head.next);
+        }
+
+        private LinkedList _removeLeadingZeroes(LinkedList list, Node current) {
+            if (current.val == 0) {
+                return _removeLeadingZeroes(list, current.next);
+            } else if (current == null) {
+                return list;
+            } else {
+                list.appendNode(current.val);
+                return _removeLeadingZeroes(list, current.next);
+            }
+        }
+
+
         public LinkedList addLinkedList(LinkedList other) {
             LinkedList sum = new LinkedList();
             sum = _addLinkedList(this.head, other.head, new LinkedList());
-
             return sum;
         }
 
