@@ -33,6 +33,17 @@ public class LinkedList {
             return out;
         }
 
+        public String printListReverse() {
+            Node current = this.head;
+            String out = "";
+            if(current == null) { out = "null"; return out; }
+            while (current != null) {
+                out += String.valueOf(current.val) + out.substring(0);
+                current = current.next;
+            }
+            return out;
+        }
+
         public LinkedList removeLeadingZeroes() {
             if(this.head.val != 0) { return this; }
             LinkedList list = null;

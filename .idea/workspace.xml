@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Addition not working" />
+    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Addition not working">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,9 +245,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

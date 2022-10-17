@@ -26,7 +26,6 @@ public class FileProcessor {
             PrintWriter out = new PrintWriter(outF);
 
             while (scan.hasNext()) {
-                // TODO: Process each line of the input file here.
                 String line = scan.nextLine();
                 if (line.length() == 0) {                    // skip empty lines
                     continue;
@@ -44,17 +43,22 @@ public class FileProcessor {
                         total = num1.addLinkedList(num2);
                         break;
                     case '*':
+                        total = num1.addLinkedList(num2);
                         //total = num1.multiplyLinkedList(num2);
                         break;
                     case '^':
+                        total = num1.addLinkedList(num2);
                         //total = num1.exponentiateLinkedList(num2);
                         break;
                     default:
                         System.out.println("Bad operator");
                 }
-                total = total.removeLeadingZeroes();
-                String noZeroes = total.printList();
+
+                //total = total.removeLeadingZeroes();
+                String noZeroes = total.printListReverse();
                 out.println(reformatInput + noZeroes);
+                //TODO remove print
+                System.out.println(reformatInput + noZeroes);
             }
             out.close();
 
