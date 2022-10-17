@@ -68,30 +68,38 @@ public class FileProcessor {
      * side of = sign of output
      */
     public static ArrayList<Object> processLine(String line) {
-        ArrayList<Object> listy = new ArrayList<>();
+        ArrayList<Object> listy = new ArrayList<>();                // list containts [linkedlist, operator, linkedlist, string]
         LinkedList number = new LinkedList();
         String out = "";
+        String strDigit = "";
         for(char ch: line.toCharArray()) {
             if(ch== '+' || ch =='*' || ch == '^') {
+                for(int index = strDigit.length(); index > 0; index--) {
+                    int val = strDigit.charAt(index-1)-'0';
+                    number.appendNode(val);
+                }
                 listy.add(number);
-                number = new LinkedList();          // reset number
+                number = new LinkedList();          // reset for next number
+                strDigit = "";
                 listy.add(ch);
                 out += (" " + ch + " ");
                 continue;
 
             }
            if(Character.isDigit(ch)) {
-               int val = ch - '0';
-               number.appendNode(val);
+               strDigit += ch;
                out += ch;
                continue;
            }
+        }
+        for(int index = strDigit.length(); index > 0; index--) {
+            int val = strDigit.charAt(index-1)-'0';
+            number.appendNode(val);
         }
         listy.add(number);
         if(out.length() > 0) {
             out += " = ";
             listy.add(out);
-            //System.out.println(out);
         }
         return listy;
     }
