@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class LinkedList {
     private Node head = null;
 
@@ -103,6 +105,36 @@ public class LinkedList {
             return sum;
         }
         return sum;
+    }
+
+    public LinkedList multiplyLinkedList(LinkedList other) {
+        Node current = this.head;
+        int zPadding = 0;
+        LinkedList total =  new LinkedList();
+        ArrayList<LinkedList> aListy = new ArrayList<>();
+        while(current != null) {
+            LinkedList lListy = new LinkedList();       // every multiplication will produce a new linked list in
+            for(int i = 0; i < zPadding; i++) {
+                lListy.appendNode(0);
+            }
+            int temp = current.val * other.convertToInt();
+            while(temp > 0) {
+                lListy.appendNode(temp % 10);
+                temp = temp / 10;
+            }
+            aListy.add(lListy);
+            zPadding += 1;
+            current = current.next;
+        }
+        for(LinkedList cur: aListy) {
+            total = total.addLinkedList(cur);
+        }
+        return total;
+    }
+
+    public int convertToInt() {
+        String str = this.printListReverse();
+        return Integer.parseInt(str);
     }
 }
 

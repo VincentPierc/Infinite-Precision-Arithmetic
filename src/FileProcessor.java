@@ -42,18 +42,15 @@ public class FileProcessor {
                         total = num1.addLinkedList(num2);
                         break;
                     case '*':
-                        total = num1.addLinkedList(num2);
-                        //total = num1.multiplyLinkedList(num2);
+                        total = num1.multiplyLinkedList(num2);
                         break;
                     case '^':
-                        total = num1.addLinkedList(num2);
                         //total = num1.exponentiateLinkedList(num2);
                         break;
                     default:
                         System.out.println("Bad operator");
                 }
                 String strTotal = total.printListReverse();
-                //System.out.println(reformatInput + strTotal);
                 strTotal = removeLeadingZeroes(strTotal);
                 out.println(reformatInput + strTotal);
                 }

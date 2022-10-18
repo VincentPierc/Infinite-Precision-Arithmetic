@@ -43,4 +43,26 @@ public class LinkedList_Tests {
         listy.appendNode(3);
         assertEquals("321", listy.printListReverse());
     }
+
+    @Test
+    public void testaddLinkedList() {
+        LinkedList listy = new LinkedList();
+        LinkedList listy2 = new LinkedList();
+
+        listy.appendNode(1);
+        listy2.appendNode(9);
+        assertEquals("10", listy.addLinkedList(listy2).printListReverse());
+    }
+
+    @Test
+    public void testConvertToInt() {
+        LinkedList listy = new LinkedList();
+        listy.appendNode(1);
+        listy.appendNode(0);
+        listy.appendNode(0);
+        assertEquals(1, listy.convertToInt());
+        listy.appendNode(5);
+        assertEquals(5001, listy.convertToInt());
+
+    }
 }

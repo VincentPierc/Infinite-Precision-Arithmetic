@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Addition not working">
+    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Addition working!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outFile" beforeDir="false" afterPath="$PROJECT_DIR$/outFile" afterDir="false" />
@@ -72,11 +72,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests.testLinkedListConstructor2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList_Tests.testConvertToInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testLinkedListConstructor2" />
+      <option name="METHOD_NAME" value="testConvertToInt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,11 +92,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests.testRemoveLeadingZeroes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList_Tests.testaddLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testRemoveLeadingZeroes" />
+      <option name="METHOD_NAME" value="testaddLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,18 +104,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.BigNumArithmetic" />
+      <item itemvalue="JUnit.LinkedList_Tests.testConvertToInt" />
+      <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
       <item itemvalue="JUnit.LinkedList_Tests" />
       <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
-      <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
-      <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
+        <item itemvalue="JUnit.LinkedList_Tests.testConvertToInt" />
+        <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
         <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
         <item itemvalue="JUnit.LinkedList_Tests" />
-        <item itemvalue="JUnit.LinkedList_Tests.testRemoveLeadingZeroes" />
-        <item itemvalue="JUnit.LinkedList_Tests.testLinkedListConstructor2" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666024974652</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Addition working!">
+      <created>1666040311305</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666040311305</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +256,19 @@
     <MESSAGE value="Beginning addition" />
     <MESSAGE value="Processing" />
     <MESSAGE value="Addition not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition not working" />
+    <MESSAGE value="Addition working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition working!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
