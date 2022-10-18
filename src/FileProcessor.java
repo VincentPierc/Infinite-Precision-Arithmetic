@@ -40,20 +40,23 @@ public class FileProcessor {
                 switch (operator) {
                     case '+':
                         total = num1.addLinkedList(num2);
+                        String strTotal = total.printListReverse();
+                        strTotal = removeLeadingZeroes(strTotal);
+                        out.println(reformatInput + strTotal);
                         break;
                     case '*':
                         total = num1.multiplyLinkedList(num2);
+                        strTotal = total.printListReverse();
+                        strTotal = removeLeadingZeroes(strTotal);
+                        out.println(reformatInput + strTotal);
                         break;
                     case '^':
-                        System.out.println(num1.exponentiateLinkedList(num2));
+                       out.println(reformatInput + num1.exponentiateLinkedList(num2));
                         break;
                     default:
                         System.out.println("Bad operator");
                 }
-                String strTotal = total.printListReverse();
-                strTotal = removeLeadingZeroes(strTotal);
-                out.println(reformatInput + strTotal);
-                }
+            }
             out.close();
 
         } catch (FileNotFoundException e) {

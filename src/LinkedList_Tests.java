@@ -11,24 +11,17 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class LinkedList_Tests {
 
     @Test
-    public void testLinkedListConstructor() {
-        LinkedList listy = new LinkedList();
-        listy.appendNode(4);
-        assertEquals("4", listy.printList());
-    }
-
-    @Test
-    public void testLinkedListConstructor2() {
+    public void testappendNode() {
         LinkedList listy = new LinkedList();
         listy.appendNode(1);
         listy.appendNode(2);
-        listy.appendNode(3);
-        assertEquals("123", listy.printList());
+        assertEquals("12", listy.printList());
     }
 
     @Test
     public void testPrintList() {
         LinkedList listy = new LinkedList();
+        assertEquals("null", listy.printList());
         listy.appendNode(1);
         listy.appendNode(2);
         listy.appendNode(3);
@@ -38,6 +31,8 @@ public class LinkedList_Tests {
     @Test
     public void testPrintListReverse() {
         LinkedList listy = new LinkedList();
+        assertEquals("null", listy.printListReverse());
+
         listy.appendNode(1);
         listy.appendNode(2);
         listy.appendNode(3);
@@ -45,13 +40,30 @@ public class LinkedList_Tests {
     }
 
     @Test
-    public void testaddLinkedList() {
+    public void testAddLinkedList() {
         LinkedList listy = new LinkedList();
         LinkedList listy2 = new LinkedList();
-
         listy.appendNode(1);
+        listy.appendNode(0);
         listy2.appendNode(9);
+        listy2.appendNode(0);
         assertEquals("10", listy.addLinkedList(listy2).printListReverse());
+        listy2.appendNode(1);
+        assertEquals("110", listy.addLinkedList(listy2).printListReverse());
+
+    }
+
+    @Test
+    public void testAddLinkedList2() {
+        LinkedList listy = new LinkedList();
+        LinkedList listy2 = new LinkedList();
+        listy.appendNode(0);
+        listy.appendNode(6);
+        listy.appendNode(9);
+        listy2.appendNode(1);
+        listy2.appendNode(5);
+        assertEquals("1011", listy.addLinkedList(listy2).printListReverse());
+        assertEquals("1011", listy2.addLinkedList(listy).printListReverse());
     }
 
     @Test
@@ -87,6 +99,6 @@ public class LinkedList_Tests {
         listy.appendNode(2);
         listy2.appendNode(3);
         assertEquals(8, listy.exponentiateLinkedList(listy2));
-
+        assertEquals(9, listy2.exponentiateLinkedList(listy));
     }
 }

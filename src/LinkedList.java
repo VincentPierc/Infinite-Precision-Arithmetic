@@ -156,13 +156,14 @@ public class LinkedList {
     }
 
     public int exponentiateLinkedList(LinkedList other) {
-
-        int total = _exponentiateLinkedList(this.convertToInt(),other.convertToInt(),1, 0);
-        if(other.convertToInt() % 2 == 1) { total= total * this.convertToInt(); } //multiply one more time for odd only
+        int x = this.convertToInt();
+        int n = other.convertToInt();
+        int total = _exponentiateLinkedList(x,n,1, 0);
+        if(n % 2 == 1) { total= total * x; } //multiply one more time for odd only
         return total;
     }
 
-    public int _exponentiateLinkedList(int x, int n, int sum, int counter) {
+    private int _exponentiateLinkedList(int x, int n, int sum, int counter) {
         if(n==0) { return 1; }
         else if (n%2==0) {      // even case
             if(counter == n/2) { return sum; }
