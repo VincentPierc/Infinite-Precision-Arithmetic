@@ -154,7 +154,27 @@ public class LinkedList {
         String str = this.printListReverse();
         return Integer.parseInt(str);
     }
+
+    public int exponentiateLinkedList(LinkedList other) {
+
+        int total = _exponentiateLinkedList(this.convertToInt(),other.convertToInt(),1, 0);
+        return total;
+    }
+
+    public int _exponentiateLinkedList(int x, int n, int sum, int counter) {
+        if(n==0) { return 1; }
+        else if (n%2==0) {      // even case
+            if(counter == n/2) { return sum; }
+            sum = _exponentiateLinkedList(x,n,x*x*sum,counter+1);
+        } else if(n%2==1) {     // odd case
+            if(counter == (n-1)/2) { return sum; }
+            sum = x * _exponentiateLinkedList(x,n,x*x*sum, counter+1);
+        }
+        return sum;
+    }
+
 }
+
 
 
 

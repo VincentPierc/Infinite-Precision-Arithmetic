@@ -65,4 +65,28 @@ public class LinkedList_Tests {
         assertEquals(5001, listy.convertToInt());
 
     }
+
+    @Test
+    public void testMultiplyLinkedList() {
+        LinkedList listy = new LinkedList();
+        LinkedList listy2 = new LinkedList();
+        listy.appendNode(5);
+        listy.appendNode(2);
+        listy.appendNode(3);
+
+        listy2.appendNode(1);
+        listy2.appendNode(4);
+        assertEquals(13325, listy.multiplyLinkedList(listy2).convertToInt());
+
+    }
+
+    @Test
+    public void testExponentiateLinkedList() {
+        LinkedList listy = new LinkedList();
+        LinkedList listy2 = new LinkedList();
+        listy.appendNode(2);
+        listy2.appendNode(3);
+        assertEquals(8, listy.exponentiateLinkedList(listy2));
+
+    }
 }

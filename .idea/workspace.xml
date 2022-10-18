@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Multiplication working!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outFile" beforeDir="false" afterPath="$PROJECT_DIR$/outFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +82,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests.testPrintListReverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList_Tests.testExponentiateLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testPrintListReverse" />
+      <option name="METHOD_NAME" value="testExponentiateLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests.testaddLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList_Tests.testMultiplyLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testaddLinkedList" />
+      <option name="METHOD_NAME" value="testMultiplyLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,17 +105,17 @@
     <list>
       <item itemvalue="Application.BigNumArithmetic" />
       <item itemvalue="JUnit.LinkedList_Tests.testConvertToInt" />
-      <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
+      <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
+      <item itemvalue="JUnit.LinkedList_Tests.testMultiplyLinkedList" />
       <item itemvalue="JUnit.LinkedList_Tests" />
-      <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
-        <item itemvalue="JUnit.LinkedList_Tests.testConvertToInt" />
-        <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
-        <item itemvalue="JUnit.LinkedList_Tests.testPrintListReverse" />
+        <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
         <item itemvalue="JUnit.LinkedList_Tests" />
+        <item itemvalue="JUnit.LinkedList_Tests.testMultiplyLinkedList" />
+        <item itemvalue="JUnit.LinkedList_Tests.testConvertToInt" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666056211840</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Multiplication working!">
+      <created>1666056443963</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666056443963</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,9 +278,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/LinkedList_Tests.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -278,6 +290,8 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests_testMultiplyLinkedList.ic" NAME="LinkedList_Tests.testMultiplyLinkedList Coverage Results" MODIFIED="1666062955248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests.ic" NAME="LinkedList_Tests Coverage Results" MODIFIED="1666062961421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Project2$BigNumArithmetic.ic" NAME="BigNumArithmetic Coverage Results" MODIFIED="1665894029148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
