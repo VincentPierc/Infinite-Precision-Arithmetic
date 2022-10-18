@@ -43,6 +43,10 @@ public class LinkedList {
         return out;
     }
 
+    /**
+     * Takes a linkedlist with head as ones digit and converts to string from highest(left) order to lowest(right) order
+     * @return String
+     */
     public String printListReverse() {
         Node current = this.head;
         String out = "";
@@ -57,6 +61,11 @@ public class LinkedList {
         return out;
     }
 
+    /**
+     * Adds two linked lists, assuming head is ones digit
+     * @param other
+     * @return LinkedList
+     */
     public LinkedList addLinkedList(LinkedList other) {
         LinkedList sum = new LinkedList();
         sum = _addLinkedList(this.head, other.head, new LinkedList(), false);
@@ -107,6 +116,11 @@ public class LinkedList {
         return sum;
     }
 
+    /**
+     * multiplies two linked lists. Assuming head is ones digit
+     * @param other
+     * @return LinkedList
+     */
     public LinkedList multiplyLinkedList(LinkedList other) {
         Node current = this.head;
         int zPadding = 0;
@@ -132,6 +146,10 @@ public class LinkedList {
         return total;
     }
 
+    /**
+     * Takes LinkedList and converts to int, BEWARE assumed head is ones place of linkedList
+     * @return integer
+     */
     public int convertToInt() {
         String str = this.printListReverse();
         return Integer.parseInt(str);
