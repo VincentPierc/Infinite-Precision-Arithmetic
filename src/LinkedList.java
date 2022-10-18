@@ -158,6 +158,7 @@ public class LinkedList {
     public int exponentiateLinkedList(LinkedList other) {
 
         int total = _exponentiateLinkedList(this.convertToInt(),other.convertToInt(),1, 0);
+        if(other.convertToInt() % 2 == 1) { total= total * this.convertToInt(); } //multiply one more time for odd only
         return total;
     }
 
@@ -168,7 +169,7 @@ public class LinkedList {
             sum = _exponentiateLinkedList(x,n,x*x*sum,counter+1);
         } else if(n%2==1) {     // odd case
             if(counter == (n-1)/2) { return sum; }
-            sum = x * _exponentiateLinkedList(x,n,x*x*sum, counter+1);
+            sum = _exponentiateLinkedList(x,n,x*x*sum, counter+1);
         }
         return sum;
     }
