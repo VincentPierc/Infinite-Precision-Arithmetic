@@ -95,7 +95,13 @@ public class LinkedList_Tests {
         listy2.appendNode(1);
         listy2.appendNode(4);
         assertEquals(13325, listy.multiplyLinkedList(listy2).convertToInt());
-
+        LinkedList listy9 = new LinkedList(2);
+        LinkedList listy10 = new LinkedList(2);
+        assertEquals(4, listy9.multiplyLinkedList(listy10).convertToInt());
+        LinkedList listy11 = new LinkedList(9);
+        LinkedList listy12 = new LinkedList(9);
+        listy12.appendNode(1);
+        assertEquals(171, listy11.multiplyLinkedList(listy12).convertToInt());
         LinkedList listy3 = new LinkedList(4);
         LinkedList listy4 = new LinkedList(4);
         assertEquals("16", listy3.multiplyLinkedList(listy4).printListReverse());

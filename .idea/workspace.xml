@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Full coverage Testcases Done!?">
+    <list default="true" id="fb3960be-0d59-4e37-a37a-997042e51ce5" name="Changes" comment="Exponent working. Main is bugged out.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outFile" beforeDir="false" afterPath="$PROJECT_DIR$/outFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
     </list>
@@ -58,6 +57,7 @@
     <configuration name="BigNumArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BigNumArithmetic" />
       <module name="Project2" />
+      <option name="PROGRAM_PARAMETERS" value="SampleInput.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,8 +112,8 @@
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
         <item itemvalue="JUnit.LinkedList_Tests" />
-        <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
         <item itemvalue="JUnit.LinkedList_Tests.testMultiplyLinkedList" />
+        <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
         <item itemvalue="JUnit.LinkedList_Tests.equalsLinkedList" />
       </list>
     </recent_temporary>
@@ -267,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666132206536</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Exponent working. Main is bugged out.">
+      <created>1666225831574</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666225831574</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,9 +302,34 @@
     <MESSAGE value="Odd exponentiation not working" />
     <MESSAGE value="Exponentiation working!" />
     <MESSAGE value="Full coverage Testcases Done!?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full coverage Testcases Done!?" />
+    <MESSAGE value="Exponent working. Main is bugged out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exponent working. Main is bugged out." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FileProcessor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="list" />
@@ -310,7 +342,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests_testMultiplyLinkedList.ic" NAME="LinkedList_Tests.testMultiplyLinkedList Coverage Results" MODIFIED="1666062955248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests.ic" NAME="LinkedList_Tests Coverage Results" MODIFIED="1666225600592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests.ic" NAME="LinkedList_Tests Coverage Results" MODIFIED="1666232556602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Project2$BigNumArithmetic.ic" NAME="BigNumArithmetic Coverage Results" MODIFIED="1665894029148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

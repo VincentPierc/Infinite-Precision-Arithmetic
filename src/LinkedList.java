@@ -135,26 +135,37 @@ public class LinkedList {
      */
     public LinkedList multiplyLinkedList(LinkedList other) {
         Node current = this.head;
+        Node other_current = other.head;
         int zPadding = 0;
         LinkedList total =  new LinkedList();
         ArrayList<LinkedList> aListy = new ArrayList<>();
-        if(this.convertToInt() == 0 || other.convertToInt() == 0) {
+        if(this.head.val == 0 && this.head.next == null || other.head.val == 0 && other.head.next == null) {
             LinkedList zero = new LinkedList(0);
             return zero;
         }
         while(current != null) {
-            LinkedList lListy = new LinkedList();       // every multiplication will produce a new linked list in
+            LinkedList lListy = new LinkedList();       // every multiplication will produce a new linked list
             for(int i = 0; i < zPadding; i++) {
                 lListy.appendNode(0);
             }
-            int temp = current.val * other.convertToInt();
-            while(temp > 0) {
-                lListy.appendNode(temp % 10);
-                temp = temp / 10;
+            int carry = 0;
+            while(other_current != null) {
+                int temp = (other_current.val * current.val) + carry;  //temp always <100
+                int ones_place = temp % 10;
+                lListy.appendNode(ones_place);
+                carry = temp / 10;
+                if (carry != 0 && other_current.next == null) {
+                    lListy.appendNode(carry);
+                    break;
+                }
+                other_current = other_current.next;
+
             }
+
             aListy.add(lListy);
             zPadding += 1;
             current = current.next;
+            other_current = other.head;
         }
         for(LinkedList cur: aListy) {
             total = total.addLinkedList(cur);
