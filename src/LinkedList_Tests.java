@@ -11,6 +11,13 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class LinkedList_Tests {
 
     @Test
+    public void testLinkedListConstructor() {
+        LinkedList listy = new LinkedList();
+        assertEquals("null", listy.printList());
+        LinkedList listy2 = new LinkedList(1);
+        assertEquals("1", listy2.printList());
+    }
+    @Test
     public void testappendNode() {
         LinkedList listy = new LinkedList();
         listy.appendNode(1);
@@ -32,7 +39,6 @@ public class LinkedList_Tests {
     public void testPrintListReverse() {
         LinkedList listy = new LinkedList();
         assertEquals("null", listy.printListReverse());
-
         listy.appendNode(1);
         listy.appendNode(2);
         listy.appendNode(3);
@@ -90,15 +96,35 @@ public class LinkedList_Tests {
         listy2.appendNode(4);
         assertEquals(13325, listy.multiplyLinkedList(listy2).convertToInt());
 
+        LinkedList listy3 = new LinkedList(4);
+        LinkedList listy4 = new LinkedList(4);
+        assertEquals("16", listy3.multiplyLinkedList(listy4).printListReverse());
+        LinkedList listy0 = new LinkedList(0);
+        assertEquals("0", listy.multiplyLinkedList(listy0).printListReverse());
+
     }
 
     @Test
-    public void testExponentiateLinkedList() {
-        LinkedList listy = new LinkedList();
-        LinkedList listy2 = new LinkedList();
-        listy.appendNode(2);
-        listy2.appendNode(3);
-        assertEquals(8, listy.exponentiateLinkedList(listy2));
-        assertEquals(9, listy2.exponentiateLinkedList(listy));
+    public void testdivideLinkedListby2(){
+        LinkedList listy = new LinkedList(8);
+        LinkedList listy2 = new LinkedList(4);
+        assertEquals(listy2.printList(), listy.divideLinkedListby2().printList());
     }
+    @Test
+    public void testExponentiateLinkedList() {
+        LinkedList listy = new LinkedList(2);
+        LinkedList listy2 = new LinkedList(3);
+        LinkedList listy3 = new LinkedList (0);
+        listy3.appendNode(2);
+        LinkedList listy0 = new LinkedList(0);
+        LinkedList listy1 = new LinkedList(1);
+        assertEquals("1048576", listy.exponentiateLinkedList(listy3).printListReverse());
+        assertEquals("8", listy.exponentiateLinkedList(listy2).printList());
+        assertEquals("9", listy2.exponentiateLinkedList(listy).printList());
+        assertEquals("0", listy0.exponentiateLinkedList(listy).printList());
+        assertEquals("1", listy2.exponentiateLinkedList(listy0).printList());
+        assertEquals("3", listy2.exponentiateLinkedList(listy1).printList());
+    }
+
+
 }

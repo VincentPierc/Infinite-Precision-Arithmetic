@@ -8,9 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-
-
 public class FileProcessor {
 
     /**
@@ -40,22 +37,21 @@ public class FileProcessor {
                 switch (operator) {
                     case '+':
                         total = num1.addLinkedList(num2);
-                        String strTotal = total.printListReverse();
-                        strTotal = removeLeadingZeroes(strTotal);
-                        out.println(reformatInput + strTotal);
                         break;
                     case '*':
                         total = num1.multiplyLinkedList(num2);
-                        strTotal = total.printListReverse();
-                        strTotal = removeLeadingZeroes(strTotal);
-                        out.println(reformatInput + strTotal);
                         break;
                     case '^':
-                       out.println(reformatInput + num1.exponentiateLinkedList(num2));
+                        total = num1.exponentiateLinkedList(num2);
                         break;
                     default:
                         System.out.println("Bad operator");
                 }
+                String strTotal = total.printListReverse();
+                if(strTotal.length() != 1) {
+                    strTotal = removeLeadingZeroes(strTotal);
+                }
+                out.println(reformatInput + strTotal);
             }
             out.close();
 
@@ -66,7 +62,6 @@ public class FileProcessor {
     }
 
     /**
-     *
      * @param line
      * @return ArrayList of Listnodes of numbers high order to low. char containing operator. String containing left hand
      * side of = sign of output
@@ -76,10 +71,10 @@ public class FileProcessor {
         LinkedList number = new LinkedList();
         String out = "";
         String strDigit = "";
-        for(char ch: line.toCharArray()) {
-            if(ch== '+' || ch =='*' || ch == '^') {
-                for(int index = strDigit.length(); index > 0; index--) {
-                    int val = strDigit.charAt(index-1)-'0';
+        for (char ch : line.toCharArray()) {
+            if (ch == '+' || ch == '*' || ch == '^') {
+                for (int index = strDigit.length(); index > 0; index--) {
+                    int val = strDigit.charAt(index - 1) - '0';
                     number.appendNode(val);
                 }
                 listy.add(number);
@@ -90,18 +85,18 @@ public class FileProcessor {
                 continue;
 
             }
-           if(Character.isDigit(ch)) {
-               strDigit += ch;
-               out += ch;
-               continue;
-           }
+            if (Character.isDigit(ch)) {
+                strDigit += ch;
+                out += ch;
+                continue;
+            }
         }
-        for(int index = strDigit.length(); index > 0; index--) {
-            int val = strDigit.charAt(index-1)-'0';
+        for (int index = strDigit.length(); index > 0; index--) {
+            int val = strDigit.charAt(index - 1) - '0';
             number.appendNode(val);
         }
         listy.add(number);
-        if(out.length() > 0) {
+        if (out.length() > 0) {
             out += " = ";
             listy.add(out);
         }
@@ -111,8 +106,8 @@ public class FileProcessor {
 
     public static String removeLeadingZeroes(String str) {
         String noZeroes = "";
-        for(int index = 0; index < str.length(); index++) {
-            if(str.charAt(index) == '0') {
+        for (int index = 0; index < str.length(); index++) {
+            if (str.charAt(index) == '0') {
                 continue;
             }
             noZeroes = str.substring(index);

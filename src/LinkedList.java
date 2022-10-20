@@ -3,8 +3,20 @@ import java.util.ArrayList;
 public class LinkedList {
     private Node head = null;
 
+    /**
+     * Default constructor
+     */
     public LinkedList() {
         this.head = null;
+    }
+
+    /**
+     * constructor with head initialized to input integer
+     * @param val
+     */
+    public LinkedList(int val) {
+        Node new_node = new Node(val);
+        this.head = new_node;
     }
     static class Node {
         private int val;
@@ -126,6 +138,10 @@ public class LinkedList {
         int zPadding = 0;
         LinkedList total =  new LinkedList();
         ArrayList<LinkedList> aListy = new ArrayList<>();
+        if(this.convertToInt() == 0 || other.convertToInt() == 0) {
+            LinkedList zero = new LinkedList(0);
+            return zero;
+        }
         while(current != null) {
             LinkedList lListy = new LinkedList();       // every multiplication will produce a new linked list in
             for(int i = 0; i < zPadding; i++) {
@@ -155,26 +171,49 @@ public class LinkedList {
         return Integer.parseInt(str);
     }
 
-    public int exponentiateLinkedList(LinkedList other) {
-        int x = this.convertToInt();
-        int n = other.convertToInt();
-        int total = _exponentiateLinkedList(x,n,1, 0);
-        if(n % 2 == 1) { total= total * x; } //multiply one more time for odd only
-        return total;
-    }
-
-    private int _exponentiateLinkedList(int x, int n, int sum, int counter) {
-        if(n==0) { return 1; }
-        else if (n%2==0) {      // even case
-            if(counter == n/2) { return sum; }
-            sum = _exponentiateLinkedList(x,n,x*x*sum,counter+1);
-        } else if(n%2==1) {     // odd case
-            if(counter == (n-1)/2) { return sum; }
-            sum = _exponentiateLinkedList(x,n,x*x*sum, counter+1);
+    public LinkedList exponentiateLinkedList(LinkedList other) {
+        if(this.head.val == 0 && this.head.next == null) {          //0^ case
+            return (new LinkedList(0));
         }
-        return sum;
+       if(other.head.val == 1 && other.head.next == null) {         //^1 case
+            return this;
+       }
+       int count = other.convertToInt();
+       if(count % 2 == 1) {
+           count -=1;
+       }
+        count = count/2;
+        LinkedList x2 = this.multiplyLinkedList(this);        //x^2 var
+        LinkedList total = new LinkedList(1);                   // accumulation var
+
+        total = _exponentiateLinkedList(x2,count, total);
+        if(other.head.val % 2 == 1) {       //odd needs one last *x
+            total = total.multiplyLinkedList(this);
+        }
+        return total;
+
+
+
+
     }
 
+    private LinkedList _exponentiateLinkedList(LinkedList x2, int count, LinkedList accumulation) {
+        if(count == 0) {
+            return accumulation;
+        }
+        else {
+            accumulation = x2.multiplyLinkedList(accumulation);
+            return _exponentiateLinkedList(x2, count-1, accumulation);
+        }
+    }
+    public LinkedList divideLinkedListby2() {
+        LinkedList five = new LinkedList();
+        LinkedList output;
+        five.appendNode(5);
+        output = this.multiplyLinkedList(five);
+        output.head = output.head.next;
+        return output;
+    }
 }
 
 

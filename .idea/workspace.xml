@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SampleInput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outFile" beforeDir="false" afterPath="$PROJECT_DIR$/outFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,6 @@
     <configuration name="BigNumArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BigNumArithmetic" />
       <module name="Project2" />
-      <option name="PROGRAM_PARAMETERS" value="SampleInput.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,6 +67,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList_Tests.equalsLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
+      <option name="METHOD_NAME" value="equalsLinkedList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,21 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_Tests.testaddLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList_Tests.testMultiplyLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testaddLinkedList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedList_Tests.testappendNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList_Tests" />
-      <option name="METHOD_NAME" value="testappendNode" />
+      <option name="METHOD_NAME" value="testMultiplyLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,8 +103,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.BigNumArithmetic" />
-      <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
-      <item itemvalue="JUnit.LinkedList_Tests.testappendNode" />
+      <item itemvalue="JUnit.LinkedList_Tests.equalsLinkedList" />
+      <item itemvalue="JUnit.LinkedList_Tests.testMultiplyLinkedList" />
       <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
       <item itemvalue="JUnit.LinkedList_Tests" />
     </list>
@@ -110,9 +112,9 @@
       <list>
         <item itemvalue="Application.BigNumArithmetic" />
         <item itemvalue="JUnit.LinkedList_Tests" />
-        <item itemvalue="JUnit.LinkedList_Tests.testaddLinkedList" />
-        <item itemvalue="JUnit.LinkedList_Tests.testappendNode" />
         <item itemvalue="JUnit.LinkedList_Tests.testExponentiateLinkedList" />
+        <item itemvalue="JUnit.LinkedList_Tests.testMultiplyLinkedList" />
+        <item itemvalue="JUnit.LinkedList_Tests.equalsLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -296,15 +298,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Full coverage Testcases Done!?" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LinkedList.java</url>
-          <line>158</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="list" />
@@ -317,7 +310,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests_testMultiplyLinkedList.ic" NAME="LinkedList_Tests.testMultiplyLinkedList Coverage Results" MODIFIED="1666062955248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests.ic" NAME="LinkedList_Tests Coverage Results" MODIFIED="1666132153840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Infinite_Precision_Arithmetic$LinkedList_Tests.ic" NAME="LinkedList_Tests Coverage Results" MODIFIED="1666225600592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Project2$BigNumArithmetic.ic" NAME="BigNumArithmetic Coverage Results" MODIFIED="1665894029148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
